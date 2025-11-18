@@ -1,19 +1,16 @@
-# Garage Door — Circuit Schematic
+# Pic Microcontroller Garage Door System Ultrasonic Sensor — Circuit Notes
 
-- Course: PIC Microcontroller: Garage Door System Ultrasonic Sensor
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/pic-microcontroller-ultrasonic-sensor-garage-door-system-/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the PIC Microcontroller board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Ultrasonic sensor to PIC GPIO; driver to motor/relay for door.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
-Ultrasonic -> PIC -> Relay/Motor -> Door
-```
-
-## Purchase With Discount
-
-Get a discounted price and control entry automatically — use the link above.
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
